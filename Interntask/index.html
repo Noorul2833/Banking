@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <button onclick="login()">Login</button>
+        </div>
+        
+        <div id="dashboard" style="display:none;">
+            <h2>Welcome, <span id="user"></span></h2>
+            <p>Balance: Rs.<span id="balance"></span></p>
+            <h3>Transfer Money</h3>
+            <input type="text" id="recipient" placeholder="Recipient">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="transfer()">Send</button>
+            <h3>Transaction History</h3>
+            <ul id="transactions"></ul>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
